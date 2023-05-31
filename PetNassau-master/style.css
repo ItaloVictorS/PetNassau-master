@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap');
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  font-family: 'Chivo Mono';
+ 
+}
+
+ion-icon {
+  font-size: 150px;
+}
+
+
+
+/*sobre*/
+.content-title-sobre {
+  margin-bottom: auto;
+  color: #f78032;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100px;
+
+}
+
+.container-sobre{
+  color: #030303;
+  margin-left: 50px;
+}
+
+
+
+/*NAVEGAÇÃO*/
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: #f78032;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 190px;
+  height: max-content;
+  cursor: pointer;
+  margin: 12px;
+  margin-left: 20px;
+}
+
+.content-buttons {
+  width: 20%;
+  margin: 25px;
+  margin-right: 120px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.content-buttons button {
+  margin: 10px;
+  flex-grow: 1;
+}
+
+
+/*Carousel*/
+.carousel-indicators {
+  display: flex;
+  align-items: flex-end;
+}
+
+.carousel-indicators li {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #3000b4;
+
+}
+
+.carousel-indicators li.active {
+  background-color: #1E1E1E;
+}
+
+/*promoção*/
+
+.promo-section {
+  text-align: center;
+}
+
+.promo-title {
+  margin:5%;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #f78032;
+}
+
+
+
+.promo-cards-container {
+  display: flex;
+  justify-content: center;
+}
+
+.promo-card {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 10px;
+  max-width: 250px;
+}
+
+.promo-card img {
+  width: 150px;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.promo-card h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.promo-card p {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.promo-card .btn {
+  background-color: #ff9800;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.promo-card .btn:hover {
+  background-color: #e65100;
+}
+
+
+/*Comments*/
+
+.content-title {
+  margin-bottom: auto;
+  color: #f78032;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 200px;
+
+}
+
+.container-comments {
+  color: #f78032;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 450px;
+  margin: auto;
+}
+
+.carousel-content {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-content p {
+  
+  max-width: 60%;
+  text-align: center;
+}
+
+
+/*Meet*/
+.container-meet {
+  width: 100%;
+  height: 650px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.content-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-left iframe {
+  width: 70%;
+  height: 70%;
+}
+
+.content-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+
+/*Footer*/
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(27, 27, 27);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer ion-icon {
+  font-size: 30px;
+  color: #FFFFFF;
+  margin: 20px;
+}
+
+footer p {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/*Table*/
+
+
+
+/*Responsividade*/
+@media (max-width: 768px) {
+  .container-card {
+    grid-template-columns: 1fr;
+  }
+
+  #Inicio {
+    padding-top: 0px;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .content-buttons {
+    width: 65%;
+    margin: 1px;
+    align-items: center;
+  }
+
+  .logo {
+    margin-left: 10px;
+  }
+
+  .content-buttons button {
+    font-size: 10px;
+
+  }
+
+  nav {
+    position: static;
+  }
+
+  .container-comments {
+    width: 90%;
+  }
+
+  .content-title {
+    align-items: center;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+  
+  .container-table {
+    width: 95%;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
